@@ -1,0 +1,247 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
+
+body {
+
+  margin: 0;
+
+  padding: 0;
+
+  font-family: 'Poppins', sans-serif;
+
+  /* Blue gradient background */
+
+  background: linear-gradient(135deg, #2596BE, #5FB0D3, #A0D4F1);
+
+  color: #fff;
+
+  display: flex;
+
+  justify-content: center;
+
+  align-items: center;
+
+  min-height: 100vh;
+
+  overflow-x: hidden;
+
+}
+
+.container {
+
+  text-align: center;
+
+  padding: 20px;
+
+  max-width: 600px;
+
+}
+
+/* Logo + title wrapper */
+
+#logo-title-wrapper {
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  cursor: pointer;
+
+  gap: 10px;
+
+}
+
+#site-logo {
+
+  width: 60px;
+
+  height: 60px;
+
+}
+
+/* Title */
+
+h1 {
+
+  font-size: 3em;
+
+  margin: 0;
+
+  font-weight: 700;
+
+  color: #fff; /* default Espresso color fallback */
+
+}
+
+.wtf {
+
+  color: #f5e61a; /* electric yellow for WTF */
+
+  transform: rotate(-5deg);
+
+  text-shadow: 1px 1px 3px #ffa500;
+
+  display: inline-block;
+
+}
+
+/* Subtitle */
+
+h2 {
+
+  font-size: 1.3em;
+
+  margin-bottom: 1em;
+
+  color: #ffcc80;
+
+  font-weight: 600;
+
+}
+
+/* Thought box */
+
+#thought-box {
+
+  background-color: #fff;
+
+  color: #3e2f1c;
+
+  padding: 25px;
+
+  margin: 25px 0;
+
+  border-radius: 12px;
+
+  font-size: 1.25em;
+
+  min-height: 120px;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  box-shadow: 0 8px 20px rgba(0,0,0,0.4);
+
+  border: 2px solid rgba(62, 47, 28, 0.4);
+
+  transition: all 0.3s ease;
+
+  line-height: 1.5em;
+
+}
+
+/* Espresso button */
+
+#espresso-shot {
+
+  background-color: #d2691e;
+
+  color: #fff;
+
+  font-size: 1.2em;
+
+  padding: 15px 25px;
+
+  border-radius: 10px;
+
+  cursor: pointer;
+
+  transition: all 0.2s ease;
+
+  position: relative;
+
+  margin-top: 10px;
+
+  font-weight: 600;
+
+  border: 2px solid rgba(62, 47, 28, 0.4);
+
+}
+
+/* Button shake animations */
+
+.jitter1 { animation: jitter1 0.2s infinite; }
+
+.jitter2 { animation: jitter2 0.2s infinite; }
+
+.jitter3 { animation: jitter3 0.15s infinite; }
+
+.jitter4 { animation: jitter4 0.15s infinite; }
+
+.chaosBounce { animation: chaosBounce 0.15s infinite; }
+
+@keyframes jitter1 {
+
+  0%,100%{transform:translate(0,0);}
+
+  50%{transform:translate(1px,1px) rotate(0.5deg);}
+
+}
+
+@keyframes jitter2 {
+
+  0%,100%{transform:translate(0,0);}
+
+  50%{transform:translate(2px,-2px) rotate(1deg);}
+
+}
+
+@keyframes jitter3 {
+
+  0%,100%{transform:translate(0,0);}
+
+  25%{transform:translate(-3px,2px) rotate(-2deg);}
+
+  50%{transform:translate(3px,-2px) rotate(2deg);}
+
+  75%{transform:translate(-2px,3px) rotate(-1deg);}
+
+}
+
+@keyframes jitter4 {
+
+  0%,100%{transform:translate(0,0);}
+
+  20%{transform:translate(-4px,4px) rotate(-3deg);}
+
+  40%{transform:translate(4px,-4px) rotate(3deg);}
+
+  60%{transform:translate(-3px,4px) rotate(-2deg);}
+
+  80%{transform:translate(3px,-3px) rotate(2deg);}
+
+}
+
+@keyframes chaosBounce {
+
+  0%{transform:translate(0,0) rotate(0deg);}
+
+  25%{transform:translate(10px,-10px) rotate(5deg);}
+
+  50%{transform:translate(-10px,10px) rotate(-5deg);}
+
+  75%{transform:translate(15px,-15px) rotate(10deg);}
+
+  100%{transform:translate(-15px,15px) rotate(-10deg);}
+
+}
+
+/* Mobile adjustments */
+
+@media (max-width: 600px){
+
+  h1{font-size:2em;}
+
+  h2{font-size:1em;}
+
+  #thought-box{font-size:1em; padding:15px; min-height:100px;}
+
+  #espresso-shot{font-size:1em; padding:10px 20px;}
+
+  #site-logo{width:50px; height:50px;}
+
+}
